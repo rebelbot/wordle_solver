@@ -235,6 +235,7 @@ void PrintWord(char* word, struct HintState* letters_list) {
    // ASSERT(word != 0);
     //ASSERT(letters_list  != 0);
     uint8_t letter_mask = 0;
+    uint8_t score = 0;
     DEBUG_PRINT("PrintWord %s ", word);
     for (int i = 0; i < WORDLE_WORD_SIZE; i++) {
         char c = word[i];
@@ -254,21 +255,26 @@ void PrintWord(char* word, struct HintState* letters_list) {
 
             if (letters_list[letter_index].green_position & letter_mask) {
                 printf(ANSI_COLOR_GREEN     "%c"     ANSI_COLOR_RESET, c);
+                score += 2;
             }
             else if (letters_list[letter_index].yellow_position & letter_mask) { // Don't need it but want it.
                 printf(ANSI_COLOR_YELLOW     "%c"     ANSI_COLOR_RESET, c);
+                score += 1;
             } 
             else if (letters_list[letter_index].yellow_position ) {
                 printf(ANSI_COLOR_YELLOW     "%c"     ANSI_COLOR_RESET, c);
+                score += 1;
             }   
             else   if (!(letters_list[letter_index].green_position & letter_mask)) {
                 printf(ANSI_COLOR_YELLOW     "%c"     ANSI_COLOR_RESET, c);
+                score += 1;
             }
             else printf("NO COLOUR %c %x %x %x", c, letter_mask, letters_list[letter_index].green_position, letters_list[letter_index].yellow_position);
             break;
         }
 
     }
+    printf(" %d", score);
 
 }    
 
