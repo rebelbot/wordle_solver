@@ -5,7 +5,6 @@
 //  Created by jen on 5/28/23.
 //
 
-#include "wordle_solver.h"
 #include "dictionary.h"
 #include <stdio.h>
 #include <ctype.h>
