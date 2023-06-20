@@ -9,21 +9,21 @@
 #ifndef dictionary_h
 #define dictionary_h
 
-#define DICTIONARY_LENGTH  2366 
+#define DICTIONARY_LENGTH  2372 
 
 char * word_dictionary[] = {
    "aback", "abase", "abash", "abate", "abbey", "abbot", "abhor", "abide", "abled", "abode",
     "abort", "about", "above", "abuse", "abuzz", "abyss", "achoo", "acing", "acorn", "acrid", "actor", "acute",
     "adage", "adapt", "adept", "adios", "admin", "admit", "adobe", "adobo", "adopt", "adore", "adorn",
     "adult", "affix", "afire", "afoot", "afoul", "after", "again", "agape", "agate",
-    "agent", "agile", "aging", "aglow", "agony", "agree", "ahead", "aider", "aisle",
+    "agent", "agile", "aging", "aglow", "agony", "agora", "agree", "ahead", "aider", "aisle",
     "alarm", "album", "alert", "algae", "alibi", "alien", "align", "alike", "alive",
     "allay", "alley", "allot", "allow", "alloy", "aloft", "alone", "along", "aloof",
     "aloud", "alpha", "altar", "alter", "amass", "amaze", "amber", "amble", "amend",
     "amigo", "amiss", "amity", "among", "ample", "amply", "amuse", "ancho", "angel", "anger", "angle",
     "angry", "angst", "anime", "ankle", "annex", "annoy", "annul", "anode", "antic",
     "anvil", "aorta", "apart", "aphid", "aping", "apnea", "apple", "apply", "apron",
-    "aptly", "arbor", "ardor", "arena", "argue", "arise", "armor", "aroma", "arose",
+    "aptly", "arbor", "ardor", "arena", "argon", "argue", "arise", "armor", "aroma", "arose",
     "array", "arrow", "arson", "artsy", "ascot", "ashen", "aside", "askew", "aspic", "assay",
     "asset", "atoll", "atone", "attic", "audio", "audit", "augur", "aunty", "avail",
     "avert", "avian", "avoid", "await", "awake", "award", "aware", "awash", "awful",
@@ -46,7 +46,7 @@ char * word_dictionary[] = {
     "brief", "brine", "bring", "brink", "briny", "brisk", "broad", "broil", "broke",
     "brood", "brook", "broom", "broth", "brown", "brunt", "brush", "brute", "buddy",
     "budge", "buggy", "bugle", "build", "built", "bulge", "bulky", "bully", "bunch",
-    "bunny", "burka", "burly", "burnt", "burst", "bused", "bushy", "butch", "butte", "buxom",
+    "bunny", "burka", "burly", "burnt", "bursa", "burst", "bused", "bushy", "butch", "butte", "buxom",
     "buyer", "bylaw",
    "cabal", "cabby", "cabin", "cable", "cacao", "cache", "cacti", "caddy", "cadet",
     "cagey", "cairn", "camel", "cameo", "canal", "candy", "canny", "canoe", "canon",
@@ -134,7 +134,7 @@ char * word_dictionary[] = {
     "janky", "jaunt", "jazzy", "jelly", "jerky", "jetty", "jewel", "jiffy", "joint", "joist",
     "joker", "jolly", "joust", "judge", "juice", "juicy", "jumbo", "jumpy", "junta",
     "junto", "juror",
-    "kabob", "kappa", "karma", "kayak", "kazoo", "kebab", "khaki", "kinky", "kiosk", "kitty", "knack",
+    "kabob", "kappa", "karma", "kayak", "kazoo", "kebab", "khaki", "kinda", "kinky", "kiosk", "kitty", "knack",
     "knave", "knead", "kneed", "kneel", "knelt", "knife", "knock", "knoll", "known",
     "koala", "krill",
     "label", "labor", "laden", "ladle", "lager", "lance", "lanky", "lapel", "lapse",
@@ -169,7 +169,7 @@ char * word_dictionary[] = {
     "opera", "opine", "opium", "optic", "orbit", "order", "organ", "other", "otter",
     "ought", "ouija", "ounce", "outdo", "outer", "outgo", "ovary", "ovate", "overt", "ovine",
     "ovoid", "owing", "owner", "oxide", "ozone",
-    "paddy", "pagan", "paint", "paler", "palsy", "panel", "panic", "pansy", "papal",
+    "paddy", "pagan", "paint", "paler", "palsy", "panda", "panel", "panic", "pansy", "papal",
     "paper", "parch", "parer", "parka", "parry", "parse", "party", "pasta", "paste", "pasty",
     "patch", "patio", "patsy", "patty", "pause", "payee", "payer", "peace", "peach",
     "pearl", "pecan", "pedal", "penal", "pence", "penne", "penny", "perch", "peril",
@@ -178,7 +178,7 @@ char * word_dictionary[] = {
     "pinto", "piper", "pique", "pitch", "pithy", "pivot", "pixel", "pixie", "pizza",
     "place", "plaid", "plain", "plait", "plane", "plank", "plant", "plate", "plaza",
     "plead", "pleat", "plied", "plier", "pluck", "plumb", "plume", "plump", "plunk",
-    "plush", "poesy", "point", "poise", "poker", "polar", "polka", "polyp", "pooch",
+    "plush", "poach", "poesy", "point", "poise", "poker", "polar", "polka", "polyp", "pooch",
     "poppy", "porch", "poser", "posit", "posse", "pouch", "pound", "pouty", "power",
     "prank", "prawn", "preen", "press", "price", "prick", "pride", "pried", "prime",
     "primo", "print", "prior", "prism", "privy", "prize", "probe", "prone", "prong",
