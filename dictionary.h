@@ -129,7 +129,7 @@ char * word_dictionary[] = {
     "hussy", "hutch", "hydra", "hydro", "hyena", "hymen", "hyper",
     "icily", "icing", "ideal", "idiom", "idiot", "idled", "idler", "idyll", "igloo", "iliac",
     "image", "imbue", "impel", "imply", "inane", "inbox", "incur", "index", "inept",
-    "inert", "infer", "ingot", "inlay", "inlet", "inner", "input", "inter", "intro",
+    "inert", "infer", "ingot", "inlay", "inlet", "inner", "input", "intel", "inter", "intro",
     "ionic", "irate", "irony", "islet", "issue", "itchy", "ivory",
     "janky", "jaunt", "jazzy", "jelly", "jerky", "jetty", "jewel", "jiffy", "joint", "joist",
     "joker", "jolly", "joule", "joust", "judge", "juice", "juicy", "julep", "jumbo", "jumpy", "junta",
