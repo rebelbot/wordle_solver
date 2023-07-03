@@ -46,11 +46,16 @@ struct  HintState {
 int UserInputGuess( char* buffer, char* hints) ;
 int UpdateLetterState(char* guess, char*  hint_string, struct HintState* letters_list);
 void PrintLetterState(struct HintState* letters_list);
-int SearchDictionary(char** directionary, bool* remaining_words, struct HintState* letters_list, int dictionary_size);
+int SearchDictionary(char** directionary, bool* remaining_words, struct HintState* letters_list, 
+                     int dictionary_size, uint32_t *next_guess);
 bool  RuleMatchWord(char* word, char letter, struct HintState* letter_status);
 void PrintWord(char* word, struct HintState* letters_list);
-void PrintRemainingWords(char** directionary, bool* remaining_words, struct HintState* letters_list, int dictionary_size) ;
-void WordleInit(bool* remaining_words, struct HintState* letters_list, int dictionary_size) ;
+void PrintRemainingWords(char** directionary, bool* remaining_words, struct HintState* letters_list, int dictionary_size);
+void WordleInit(bool* remaining_words, struct HintState* letters_list, int dictionary_size, uint32_t *next_guess);
+void ResetNextGuesses( uint32_t *next_guess);
+void NextGuessCalculation(char* word,  struct HintState* letters_list, uint32_t *next_guess);
+void GenerateNextGuessdata(uint32_t remaining_words_number,  uint32_t *next_guess);
+
 
 int main(int argc, char *argv[]) {
 
@@ -61,8 +66,9 @@ int main(int argc, char *argv[]) {
     char guess_string[20] = "\0";
     char hint_string[20] = "\0";
     struct HintState letter_array[ALPHABET];
+    uint32_t next_guess_letters[ALPHABET];
 
-    WordleInit(remaining_words, letter_array, dictionary_length) ;
+    WordleInit(remaining_words, letter_array, dictionary_length, next_guess_letters) ;
 
     for (int turn = 1; turn < 6; turn++) {
 
@@ -80,18 +86,20 @@ int main(int argc, char *argv[]) {
 
         printf("Trimming word list\n");
         // Provide list of all remaining options after trimming.
-        int count = SearchDictionary(word_dictionary, remaining_words, letter_array, dictionary_length);
+        int count = SearchDictionary(word_dictionary, remaining_words, letter_array, dictionary_length, next_guess_letters);
         printf("REMAINING WORDS ARE %d\n\n", count);
         PrintRemainingWords(word_dictionary, remaining_words, letter_array, dictionary_length);
+        GenerateNextGuessdata(count, next_guess_letters);
         if (count <= 1) {
             break;
         }
+        ResetNextGuesses(next_guess_letters);
     }
 
     return 0;
 }
 
-void WordleInit(bool* remaining_words, struct HintState* letters_list, int dictionary_size) {
+void WordleInit(bool* remaining_words, struct HintState* letters_list, int dictionary_size, uint32_t *next_guess) {
 
     for(int i = 0; i < dictionary_size; i++) {
         remaining_words[i] = true;
@@ -101,6 +109,15 @@ void WordleInit(bool* remaining_words, struct HintState* letters_list, int dicti
         letters_list[i].letter = LetterState_Unknown;
         letters_list[i].green_position = 0;
         letters_list[i].yellow_position = 0;
+        next_guess[i] = 0;
+    }
+
+}
+
+void ResetNextGuesses( uint32_t *next_guess) {
+
+    for(int i = 0; i < ALPHABET; i++) {
+        next_guess[i] = 0;
     }
 
 }
@@ -181,7 +198,8 @@ void PrintLetterState(struct HintState* letters_list) {
     printf( "\n" );
 }
 
-int SearchDictionary(char** directionary, bool* remaining_words, struct HintState* letters_list, int dictionary_size) {
+int SearchDictionary(char** directionary, bool* remaining_words, struct HintState* letters_list,
+                     int dictionary_size, uint32_t *next_guess) {
     //ASSERT(directionary != 0);
     //ASSERT(remaining_words  != 0);
     int count = 0;
@@ -202,9 +220,13 @@ int SearchDictionary(char** directionary, bool* remaining_words, struct HintStat
                 
                 count++;
                 DEBUG_PRINT("Removed %s count %d\n", directionary[word], count);
+
                 break;
             } else DEBUG_PRINT("Keeping %s %c\n", directionary[word], letter);
+        }
 
+        if (remaining_words[word] == true) {
+            NextGuessCalculation(directionary[word], letters_list, next_guess);
         }
     }
     return DICTIONARY_LENGTH - count -1;
@@ -330,3 +352,34 @@ bool  RuleMatchWord(char* word, char letter, struct HintState* letter_status) {
     return false;
 }
 
+
+// Only considers words still on the list for common letters.
+void NextGuessCalculation(char* word,  struct HintState* letters_list, uint32_t *next_guess) {
+    //ASSERT(word != 0);
+    //ASSERT(letter_status  != 0); 
+    //ASSERT(next_guess  != 0); 
+
+    for (char* letter = word; letter- word < WORDLE_WORD_SIZE; letter++) {
+        char letter_value = (char)( *letter) - 'a';
+
+        if (letters_list[letter_value].letter == LetterState_Unknown) {
+            next_guess[letter_value]++;
+            printf("NextGuessCalculation %s - %c %d\n", word, *letter, next_guess[letter_value]);
+        }
+    }
+
+}
+
+// Only considers words still on the list for common letters.
+void GenerateNextGuessdata(uint32_t remaining_words_number,  uint32_t *next_guess) {
+    //ASSERT(next_guess  != 0); 
+
+    for (char letter = 0; letter < ALPHABET; letter++) {
+        char letter_value = (char)(letter) + 'a';
+        if (next_guess[letter] > 0) {
+           printf("%c - %d %d%%\n", letter_value, next_guess[letter], (next_guess[letter]*100)/remaining_words_number); 
+        }
+    }
+    printf("\n\n"); 
+
+}
