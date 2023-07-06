@@ -9,7 +9,7 @@
 #ifndef dictionary_h
 #define dictionary_h
 
-#define DICTIONARY_LENGTH  2413 
+#define DICTIONARY_LENGTH  2424 
 
 char * word_dictionary[] = {
    "aback", "abase", "abash", "abate", "abbey", "abbot", "abhor", "abide", "abled", "abode",
@@ -50,7 +50,7 @@ char * word_dictionary[] = {
     "buyer", "bylaw",
    "cabal", "cabby", "cabin", "cable", "cacao", "cache", "cacti", "caddy", "cadet",
     "cagey", "cairn", "camel", "cameo", "canal", "candy", "canny", "canoe", "canon",
-    "caper", "capri", "caput", "carat", "cargo", "carny", "carol", "carry", "carve", "caste", "catch",
+    "caper", "capri", "caput", "carat", "caret", "cargo", "carny", "carol", "carry", "carte", "carve", "caste", "catch",
     "cater", "catty", "caulk", "cause", "cavil", "cease", "cedar", "cello", "chafe",
     "chaff", "chain", "chair", "chalk", "champ", "chant", "chaos", "chard", "charm",
     "chart", "chary", "chase", "chasm", "cheap", "cheat", "check", "cheek", "cheer", "chess",
@@ -166,7 +166,7 @@ char * word_dictionary[] = {
     "nymph",
     "oaken", "oasis", "obese", "occur", "ocean", "octal", "octet", "odder", "oddly", "offal",
     "offer", "often", "ogled", "ogler", "oiled", "oiler", "okapi", "olden", "older", "oldie", "olive", "ombre", "omega", "onion", "onset",
-    "opera", "opine", "opium", "optic", "orbit", "order", "organ", "other", "otter",
+    "opera", "opine", "opium", "optic", "orate", "orbit", "order", "organ", "other", "otter",
     "ought", "ouija", "ounce", "outdo", "outer", "outgo", "ovary", "ovate", "overt", "ovine",
     "ovoid", "owing", "owner", "oxide", "ozone",
     "paddy", "pagan", "paint", "paler", "palsy", "panda", "panel", "panic", "pansy", "panty", "papal",
@@ -242,8 +242,8 @@ char * word_dictionary[] = {
     "swift", "swill", "swine", "swing", "swirl", "swish", "swoon", "swoop", "sword",
     "swore", "sworn", "swung", "synod", "syrup",
     "tabby", "table", "taboo", "tacit", "tacky", "taffy", "taint", "taken", "taker",
-    "tally", "talon", "tamer", "tango", "tangy", "taper", "tapir", "tardy", "tarot",
-    "taste", "tasty", "tatty", "taunt", "tawny", "teach", "teary", "tease", "teddy",
+    "tally", "talon", "tamer", "tango", "tangy", "taped", "taper", "tapir", "tardy", "tarot",
+    "tased", "taser", "taste", "tasty", "tatty", "taunt", "tawny", "taxed", "teach", "teary", "tease", "teddy",
     "teeth", "tempo", "tenet", "tenor", "tense", "tenth", "tepee", "tepid", "terra",
     "terse", "testy", "thank", "theft", "their", "theme", "there", "these", "theta",
     "thick", "thief", "thigh", "thing", "think", "third", "thong", "thorn", "those",
