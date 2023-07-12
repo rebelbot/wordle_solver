@@ -9,7 +9,7 @@
 #ifndef dictionary_h
 #define dictionary_h
 
-#define DICTIONARY_LENGTH  2424 
+#define DICTIONARY_LENGTH  2427 
 
 char * word_dictionary[] = {
    "aback", "abase", "abash", "abate", "abbey", "abbot", "abhor", "abide", "abled", "abode",
@@ -224,7 +224,7 @@ char * word_dictionary[] = {
     "sneer", "snide", "sniff", "snipe", "snoop", "snore", "snort", "snout", "snowy",
     "snuck", "snuff", "soapy", "sober", "soggy", "solar", "soled", "solid", "solve", "sonar",
     "sonic", "sooth", "sooty", "sorry", "sound", "south", "sower", "space", "spade",
-    "spank", "spare", "spark", "spasm", "spawn", "speak", "spear", "speck", "speed",
+    "spank", "spare", "spark", "spasm", "spate", "spawn", "speak", "spear", "speck", "speed",
     "spell", "spelt", "spend", "spent", "sperm", "spice", "spicy", "spied", "spiel",
     "spike", "spiky", "spill", "spilt", "spine", "spiny", "spire", "spite", "splat",
     "split", "spoil", "spoke", "spoof", "spook", "spool", "spoon", "spore", "sport",
@@ -243,7 +243,7 @@ char * word_dictionary[] = {
     "swore", "sworn", "swung", "synod", "syrup",
     "tabby", "table", "taboo", "tacit", "tacky", "taffy", "taint", "taken", "taker",
     "tally", "talon", "tamer", "tango", "tangy", "taped", "taper", "tapir", "tardy", "tarot",
-    "tased", "taser", "taste", "tasty", "tatty", "taunt", "tawny", "taxed", "teach", "teary", "tease", "teddy",
+    "tased", "taser", "taste", "tasty", "tatty", "taunt", "taupe", "tawny", "taxed", "teach", "teary", "tease", "teddy",
     "teeth", "tempo", "tenet", "tenor", "tense", "tenth", "tepee", "tepid", "terra",
     "terse", "testy", "thank", "theft", "their", "theme", "there", "these", "theta",
     "thick", "thief", "thigh", "thing", "think", "third", "thong", "thorn", "those",
