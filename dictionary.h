@@ -9,7 +9,7 @@
 #ifndef dictionary_h
 #define dictionary_h
 
-#define DICTIONARY_LENGTH  2438 
+#define DICTIONARY_LENGTH  2453 
 
 char * word_dictionary[] = {
    "aback", "abase", "abash", "abate", "abbey", "abbot", "abhor", "abide", "abled", "abode",
@@ -26,7 +26,7 @@ char * word_dictionary[] = {
     "aptly", "arbor", "ardor", "arena", "argon", "argue", "arise", "armor", "aroma", "arose",
     "array", "arrow", "arson", "artsy", "ascot", "ashen", "aside", "askew", "aspic", "assay",
     "asset", "atoll", "atone", "attic", "audio", "audit", "augur", "aunty", "avail",
-    "avert", "avian", "avoid", "await", "awake", "award", "aware", "awash", "awful",
+    "avert", "avian", "avoid", "avows", "await", "awake", "award", "aware", "awash", "awful",
     "awoke", "axial", "axiom", "axion", "azure",
     "babka", "bacon", "badge", "badly", "bagel", "baggy", "baker", "baldy", "baler", "balky", "balmy", "balsa", "banal",
     "banjo", "barge", "baron", "basal", "basic", "basil", "basin", "basis", "baste",
@@ -86,7 +86,7 @@ char * word_dictionary[] = {
    "eager", "eagle", "early", "earth", "easel", "eaten", "eater", "ebony", "eclat",
     "edict", "edify", "eerie", "egret", "eight", "eject", "eking", "elate", "elbow",
     "elder", "elect", "elegy", "elfin", "elide", "elite", "elope", "elude", "email",
-    "embed", "ember", "emcee", "empty", "enact", "endow", "enema", "enemy", "enjoy",
+    "embed", "ember", "emcee", "emote", "empty", "enact", "endow", "enema", "enemy", "enjoy",
     "ennui", "ensue", "enter", "entry", "envoy", "epoch", "epoxy", "equal", "equip",
     "erase", "erect", "erode", "error", "erupt", "essay", "ester", "ether", "ethic",
     "ethos", "etude", "evade", "event", "every", "evict", "evoke", "exact", "exalt",
@@ -124,7 +124,7 @@ char * word_dictionary[] = {
     "hazel", "heady", "heard", "heart", "heath", "heave", "heavy", "hedge", "hefty",
     "heist", "helix", "hello", "hence", "heron", "hilly", "hinge", "hippo", "hippy",
     "hitch", "hoagy", "hoard", "hoary", "hobby", "hoist", "holed", "holly", "homer", "honey", "honor", "horde",
-    "horny", "horse", "hotel", "hotly", "hound", "house", "hovel", "hover", "howdy",
+    "horny", "horse", "horsy", "hotel", "hotly", "hound", "house", "hovel", "hover", "howdy",
     "human", "humid", "humor", "humph", "humus", "hunch", "hunky", "hurry", "husky",
     "hussy", "hutch", "hydra", "hydro", "hyena", "hymen", "hyper",
     "icily", "icing", "ideal", "idiom", "idiot", "idled", "idler", "idyll", "igloo", "iliac",
@@ -135,17 +135,17 @@ char * word_dictionary[] = {
     "joker", "jolly", "joule", "joust", "judge", "juice", "juicy", "julep", "jumbo", "jumpy", "junta",
     "junto", "juror",
     "kabob", "kappa", "kaput", "karma", "kayak", "kazoo", "kebab", "khaki", "kinda", "kinky", "kiosk", "kitty", "knack",
-    "knave", "knead", "kneed", "kneel", "knelt", "knife", "knock", "knoll", "known",
-    "koala", "krill",
+    "knave", "knead", "kneed", "kneel", "knell", "knelt", "knife", "knock", "knoll", "known",
+    "koala", "krill", "kvell",
     "label", "labor", "laden", "ladle", "lager", "lance", "lanky", "lapel", "lapse", "larch",
     "large", "larva", "lasso", "latch", "later", "lathe", "latte", "laugh", "layer", "layup",
     "leach", "leafy", "leaky", "leant", "leapt", "learn", "lease", "leash", "least",
     "leave", "ledge", "leech", "leery", "lefty", "legal", "leggy", "lemon", "lemur",
     "leper", "level", "lever", "libel", "liege", "lifer", "light", "liken", "lilac", "limbo",
-    "limit", "linen", "liner", "lingo", "lipid", "lithe", "liver", "livid", "liven", "llama",
+    "limit", "lined", "linen", "liner", "lingo", "lipid", "lithe", "lived", "liver", "livid", "liven", "llama",
     "loamy", "loath", "lobby", "lobed", "local", "locus", "lodge", "loess", "lofty", "logic", "login",
-    "loopy", "loose", "loped", "lorry", "loser", "louse", "lousy", "loved", "lover", "lower", "lowly",
-    "loyal", "lubed", "lucid", "lucky", "lucre", "lumen", "lumpy", "lunar", "lunch", "lunge", "lupus",
+    "loner", "loopy", "loose", "loped", "lorry", "loser", "louse", "lousy", "loved", "lover", "lower", "lowly",
+    "loyal", "lubed", "lucid", "lucky", "lucre", "luger", "lumen", "lumpy", "lunar", "lunch", "lunge", "lupus",
     "lurch", "lured", "lurid", "lusty", "lying", "lymph", "lyric",
     "macaw", "macho", "macro", "madam", "madly", "mafia", "magic", "magma", "maize",
     "major", "maker", "mambo", "mamma", "mammy", "manga", "mange", "mango", "mangy",
@@ -248,7 +248,7 @@ char * word_dictionary[] = {
     "terse", "testy", "thank", "theft", "their", "theme", "there", "these", "theta",
     "thick", "thief", "thigh", "thing", "think", "third", "thong", "thorn", "those",
     "three", "threw", "throb", "throw", "thrum", "thumb", "thump", "thyme", "tiara",
-    "tibia", "tidal", "tiger", "tight", "tilde", "timer", "timid", "tipsy", "titan",
+    "tibia", "tidal", "tiger", "tight", "tilde", "timed", "timer", "timid", "tipsy", "titan",
     "tithe", "title", "toast", "today", "toddy", "token", "tonal", "tonga", "tonic",
     "tooth", "topaz", "topic", "torch", "torso", "torus", "total", "totem", "touch",
     "tough", "towel", "tower", "toxic", "toxin", "trace", "track", "tract", "trade",
@@ -277,7 +277,7 @@ char * word_dictionary[] = {
     "worry", "worse", "worst", "worth", "would", "wound", "woven", "wrack", "wrath",
     "wreak", "wreck", "wrest", "wring", "wrist", "write", "wrong", "wrote", "wrung",
     "wryly",
-    "yahoo", "yappy", "yacht", "yearn", "yeast", "yield", "young", "youth", "yowza", "yucca",
+    "yahoo", "yappy", "yacht", "yearn", "yeast", "yield", "yodel", "yokel", "young", "youth", "yowza", "yucca",
     "zebra", "zesty", "zonal"
 
 
