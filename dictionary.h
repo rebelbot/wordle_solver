@@ -9,7 +9,7 @@
 #ifndef dictionary_h
 #define dictionary_h
 
-#define DICTIONARY_LENGTH  2453 
+#define DICTIONARY_LENGTH  2455 
 
 char * word_dictionary[] = {
    "aback", "abase", "abash", "abate", "abbey", "abbot", "abhor", "abide", "abled", "abode",
