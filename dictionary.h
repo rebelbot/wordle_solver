@@ -50,7 +50,7 @@ char * word_dictionary[] = {
     "buyer", "bylaw",
    "cabal", "cabby", "cabin", "cable", "cacao", "cache", "cacti", "caddy", "cadet",
     "cagey", "cairn", "camel", "cameo", "canal", "candy", "canny", "canoe", "canon",
-    "caper", "capri", "caput", "carat", "caret", "cargo", "carny", "carol", "carry", "carte", "carve", "caste", "catch",
+    "caper", "capiz", "capri", "caput", "carat", "caret", "cargo", "carny", "carol", "carry", "carte", "carve", "caste", "catch",
     "cater", "catty", "caulk", "cause", "cavil", "cease", "cedar", "cello", "chafe",
     "chaff", "chain", "chair", "chalk", "champ", "chant", "chaos", "chard", "charm",
     "chart", "chary", "chase", "chasm", "cheap", "cheat", "check", "cheek", "cheer", "chess",
