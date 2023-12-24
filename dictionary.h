@@ -9,22 +9,22 @@
 #ifndef dictionary_h
 #define dictionary_h
 
-#define DICTIONARY_LENGTH  2455 
+#define DICTIONARY_LENGTH  2459 
 
 char * word_dictionary[] = {
    "aback", "abase", "abash", "abate", "abbey", "abbot", "abhor", "abide", "abled", "abode",
     "abort", "about", "above", "abuse", "abuzz", "abyss", "achoo", "acing", "acorn", "acrid", "actor", "acute",
     "adage", "adapt", "adept", "adios", "admin", "admit", "adobe", "adobo", "adopt", "adore", "adorn",
-    "adult", "affix", "afire", "afoot", "afoul", "after", "again", "agape", "agate",
+    "adult", "affix", "afire", "afoot", "afore", "afoul", "after", "again", "agape", "agate",
     "agent", "agile", "aging", "agita", "aglow", "agony", "agora", "agree", "ahead", "ahold", "aider", "aioli", "aisle",
     "alarm", "album", "alert", "algae", "alibi", "alien", "align", "alike", "alive",
     "allay", "alley", "allot", "allow", "alloy", "aloft", "aloha", "alone", "along", "aloof",
     "aloud", "alpha", "altar", "alter", "amass", "amaze", "amber", "amble", "amend",
     "amigo", "amiss", "amity", "among", "ample", "amply", "amuse", "ancho", "angel", "anger", "angle",
-    "angry", "angst", "anime", "ankle", "annex", "annoy", "annul", "anode", "antic",
+    "angry", "angst", "anime", "anise", "ankle", "annex", "annoy", "annul", "anode", "antic",
     "anvil", "aorta", "apart", "aphid", "aping", "apnea", "apple", "apply", "apron",
     "aptly", "arbor", "ardor", "arena", "argon", "argue", "arise", "armor", "aroma", "arose",
-    "array", "arrow", "arson", "artsy", "ascot", "ashen", "aside", "askew", "aspic", "assay",
+    "array", "arrow", "arson", "artsy", "ascot", "ashen", "aside", "asker", "askew", "aspic", "assay",
     "asset", "atoll", "atone", "attic", "audio", "audit", "augur", "aunty", "avail",
     "avert", "avian", "avoid", "avows", "await", "awake", "award", "aware", "awash", "awful",
     "awoke", "axial", "axiom", "axion", "azure",
@@ -106,7 +106,7 @@ char * word_dictionary[] = {
     "freak", "freed", "freer", "fresh", "friar", "fried", "frill", "frisk", "fritz",
     "frock", "frond", "front", "frost", "froth", "frown", "froze", "fruit", "fudge",
     "fugue", "fully", "fungi", "funky", "funny", "furor", "furry", "fussy", "fuzzy",
-   "gabby", "gaffe", "gaily", "gamer", "gamma", "gamut", "gassy", "gaudy", "gauge", "gaunt",
+    "gabby", "gaffe", "gaily", "gamer", "gamma", "gamut", "gassy", "gaudy", "gauge", "gaunt",
     "gauze", "gauzy", "gavel", "gawky", "gayer", "gayly", "gazer", "gecko", "geeky", "geese",
     "genie", "genre", "ghost", "ghoul", "giant", "giddy", "gipsy", "girly", "girth",
     "given", "giver", "glade", "gland", "glare", "glass", "glaze", "gleam", "glean",
@@ -119,7 +119,7 @@ char * word_dictionary[] = {
     "group", "grout", "grove", "growl", "grown", "gruel", "gruff", "grunt", "guano", "guard",
     "guava", "guess", "guest", "guide", "guild", "guile", "guilt", "guise", "gulch",
     "gully", "gumbo", "gummy", "guppy", "gusto", "gusty", "gypsy",
-   "habit", "hacky", "haiku", "hairy", "halve", "handy", "hanky", "happy", "hardy", "harem", "harpy", "harry",
+    "habit", "hacky", "haiku", "hairy", "halve", "handy", "hanky", "happy", "hardy", "harem", "harpy", "harry",
     "harsh", "haste", "hasty", "hatch", "hater", "haunt", "haute", "haven", "havoc",
     "hazel", "heady", "heard", "heart", "heath", "heave", "heavy", "hedge", "hefty",
     "heist", "helix", "hello", "hence", "heron", "hilly", "hinge", "hippo", "hippy",
@@ -200,7 +200,7 @@ char * word_dictionary[] = {
     "rodeo", "roger", "rogue", "roomy", "roost", "rotor", "rouge", "rough", "round",
     "rouse", "route", "rover", "rowdy", "rower", "royal", "ruble", "ruddy", "ruder", "rugby",
     "ruled", "ruler", "rumba", "rumor", "rupee", "rural", "rusty",
-    "sadly", "safer", "saggy", "saint", "salad", "sally", "salon", "salsa", "salty", "salve",
+    "sabre", "sadly", "safer", "saggy", "saint", "salad", "sally", "salon", "salsa", "salty", "salve",
     "salvo", "sandy", "saner", "sappy", "sassy", "satin", "satyr", "sauce", "saucy",
     "sauna", "saute", "savor", "savoy", "savvy", "scald", "scale", "scalp", "scaly",
     "scamp", "scant", "scare", "scarf", "scary", "scene", "scent", "schwa", "scion", "scoff",
